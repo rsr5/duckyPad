@@ -3,11 +3,10 @@
 To use duckyPad configurator, clone the repo or download the latest source files from the [release page](https://github.com/dekuNukem/duckyPad/releases/latest). Enter `pc_software` directory in terminal, then use the following commands to install dependencies and launch the app:
 
 ```bash
-cd pc_software
 python3 -m venv venv
 . venv/bin/activate
-pip3 install appdirs hidapi
-python3 duckypad_config.py
+pip3 install .
+duckypad_config
 ```
 
 ## Udev Rule
@@ -38,5 +37,5 @@ sudo udevadm control --reload-rules
 To view HID connection debug log, you can start the app with `HID_OP_LOG=debug` like this:
 
 ```bash
-HID_OP_LOG=debug python duckypad_config.py
+HID_OP_LOG=debug duckypad_config
 ```

@@ -297,7 +297,7 @@ def connect_button_click():
         )
         if box_result is True:
             webbrowser.open(
-                "https://github.com/dekuNukem/duckyPad/blob/master/app_posix.md"
+                "https://github.com/dekuNukem/duckyPad/blob/master/pc_software/README.md"
             )
         elif box_result is False:
             select_root_folder()
